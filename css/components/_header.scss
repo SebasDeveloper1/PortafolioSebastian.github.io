@@ -1,0 +1,193 @@
+@import "./buttons";
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.nav__logo-container {
+    text-decoration: none;
+}
+
+.nav__logo-img {
+    width: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+// Menu styles
+.nav__menu-container {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overscroll-behavior: smooth;
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: $color-background;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.nav__menu-container2 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+// info styles
+.nav__info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 12px 8px;
+    margin: 20px 0;
+    border: 1px solid $color-secoundary-border;
+    border-radius: 8px;
+}
+
+.nav__info-data-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__info-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav__info-data-text {
+    margin-inline-start: 4px;
+}
+
+.nav__data-title {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-textprimary;
+}
+
+.nav__data-subtitle {
+    font-size: $font-size-vs;
+    color: $color-textprimary;
+}
+
+// Nav-bar styles
+.nav__list {
+    width: 90%;
+    border-block-start: 1px solid $color-primary-border;
+    list-style: none;
+}
+
+.nav__list-link {
+    font-size: $font-size-md;
+    font-weight: 500;
+    line-height: 3;
+    color: $color-textprimary;
+    text-decoration: none;
+}
+
+.nav__list-link:hover {
+    color: $color-primary;
+}
+
+.nav__list-item--cta {
+    display: none;
+}
+
+.nav__list-link--cta:hover {
+    color: $color-textprimary;
+    background-color: $color-primary-opacity;
+}
+
+.nav__list-link--active {
+    border-bottom: 2px solid $color-primary;
+}
+
+// Nav contact styles
+.nav__contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-block: 20px;
+    border-block-start: 1px solid $color-primary-border;
+}
+
+.nav__contact-title {
+    margin-block: 32px;
+    font-size: $font-size-xl;
+    font-weight: 700;
+    color: $color-textsecund;
+}
+
+.nav__contact-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+}
+
+.contact-options-link {
+    display: block;
+    width: 60px;
+    font-size: $font-size-sm;
+    color: $color-textprimary;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-options-link-img {
+    width: inherit;
+    padding: 12px;
+    margin-block-end: 4px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    background-color: $color-back-button-secondary;
+}
+
+.contact-options-link-img:hover {
+    background-color: $color-secondary;
+}
+
+.contact__line {
+    width: 50%;
+    height: 4px;
+    margin-block-start: 32px;
+    background-color: $color-primary;
+    border-radius: 1px;
+}
+
+.nav__btn-icon {
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.nav {
+    background-color: transparent;
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    border: none;
+}
+
+.nav__menu-container {
+    position: static;
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    background-color: transparent;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__info-container {
+    display: none;
+}
+
+.nav__list-link {
+    margin-inline-start: 32px;
+}
+
+.nav__list-item--cta {
+    display: inline;
+}
+
+.nav__contact-container {
+    display: none;
+}
+
+.nav__btn-container {
+    display: none;
+}
