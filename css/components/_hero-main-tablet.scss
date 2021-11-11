@@ -1,19 +1,24 @@
 @import "./golbals";
 
+.nav{
+background-color: transparent;
+}
+
 .hero__info-container {
     flex-direction: row;
     align-items: center;
 }
 
 .hero__info-image {
-    width: 296px;
-    height: 296px;
+    width: 220px;
+    height: 220px;
     margin-block-end: 0;
     margin-inline-end: 20px;
 }
 
 .hero__text {
     align-items: start;
+    text-align: start;
 }
 
 .hero__text-title {
@@ -22,5 +27,5 @@
 
 .hero__text-subtitle {
     margin-block-end: 40px;
-    font-size: $font-size-xl;
+    font-size: $font-size-lg2;
 }

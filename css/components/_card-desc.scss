@@ -1,0 +1,56 @@
+@import "./secondary-button";
+
+.description-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-block-end: 200px;
+}
+
+.card-desc {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1280px;
+    border-radius: 12px;
+}
+
+.card-desc__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-desc__info {
+    width: 100%;
+    background-color: $color-background-light;
+    padding: 20px;
+}
+
+.card-desc__info-title {
+    margin-block-end: 12px;
+    font-size: $font-size-lg2;
+    font-weight: bold;
+    color: $color-textprimary;
+}
+
+.card-desc__info-paragraph {
+    margin-block-end: 16px;
+    font-size: $font-size-sm;
+    text-align: justify;
+    line-height: 1.5;
+    color: $color-textfourth;
+}
+
+.card-desc__info-cta {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: $font-size-lg;
+}
+
+.card-desc__info-cta-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}

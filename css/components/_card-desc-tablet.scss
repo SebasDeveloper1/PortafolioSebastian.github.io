@@ -1,0 +1,24 @@
+.card-desc__image {
+    width: 40%;
+}
+
+.card-desc__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.card-desc__info-title {
+    font-size: $font-size-xl;
+}
+
+.card-desc__info-paragraph {
+    font-size: $font-size-lg;
+}
+
+.card-desc__info-cta {
+    padding: 12px 20px;
+    font-size: $font-size-lg;
+    align-self: start;
+}
