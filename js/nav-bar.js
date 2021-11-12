@@ -1,4 +1,3 @@
-var nav = document.querySelector('nav'); // Identify target
 const links = document.getElementsByClassName("nav__menu-container")[0];
 const btn_Container = document.getElementsByClassName("nav__btn-container")[0];
 const nav_Btn_Icon = document.getElementById("hamburger");
@@ -36,13 +35,3 @@ window.addEventListener("resize", function(){
         }
     }
 })
-
-window.addEventListener('scroll', function(event) { // To listen for event
-    event.preventDefault();
-
-    if (window.scrollY >= 1) { // Just an example
-        nav.style.backgroundColor = '#080f28'; // or default color
-    } else {
-        nav.style.backgroundColor = 'transparent';
-    }
-});
