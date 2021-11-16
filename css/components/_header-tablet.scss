@@ -1,7 +1,7 @@
 .nav__list {
     display: flex;
     flex-direction: row;
-    width: auto;
+    inline-size: auto;
     border: none;
 }
 
@@ -9,8 +9,8 @@
     position: static;
     display: flex;
     overflow: hidden;
-    width: auto;
-    height: calc(100% - 70px);
+    inline-size: auto;
+    block-size: calc(100% - 70px);
     background-color: transparent;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
