@@ -1,29 +1,28 @@
 @import "./secondary-button";
 
 .description-main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-block-end: 200px;
+    inline-size: 100%;
+    margin-block-end: 70px;
 }
 
 .card-desc {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 90%;
-    max-width: 1280px;
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
     border-radius: 12px;
 }
 
 .card-desc__image {
-    width: 100%;
+    inline-size: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 .card-desc__info {
-    width: 100%;
+    inline-size: 100%;
     background-color: $color-background-light;
     padding: 20px;
 }
@@ -50,7 +49,7 @@
 }
 
 .card-desc__info-cta-icon {
-    width: 20px;
-    height: 20px;
+    inline-size: 20px;
+    block-size: 20px;
     vertical-align: middle;
 }

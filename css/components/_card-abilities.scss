@@ -1,0 +1,68 @@
+@import "./secondary-button";
+
+.abilities-main {
+    inline-size: 100%;
+    margin-block-end: 70px;
+}
+
+.abilities-container {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
+}
+
+.abilities-container__title {
+    margin-block-end: 12px;
+    padding-block: 20px;
+    font-size: $font-size-lg2;
+    font-weight: bold;
+    color: $color-textprimary;
+    border-block-start: 1px solid $color-secoundary-border;
+}
+
+.abilities-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-ability {
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    max-inline-size: 400px;
+    margin-block-end: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba($color-secondary, 0.2);
+}
+
+.card-ability__image {
+    inline-size: 70px;
+    margin-inline-end: 12px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-ability__name {
+    margin-block-end: 4px;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-textprimary;
+}
+
+.card-ability__desc {
+    font-size: $font-size-md;
+    line-height: 1.5;
+    color: $color-textfourth;
+}
+
+.card-ability--more {
+    border: 1px dashed $color-primary;
+}
+
+.card-ability__more {
+    margin: 0 auto;
+    font-size: $font-size-lg;
+    color: $color-primary;
+}

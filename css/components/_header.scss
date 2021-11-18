@@ -1,7 +1,7 @@
 @import "./primary-button";
 
 .header {
-    width: 100%;
+    inline-size: 100%;
 }
 
 .nav {
@@ -11,8 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 70px;
+    inline-size: 100%;
+    block-size: 70px;
     padding: 0 5%;
     background-color: $color-background;
     -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
@@ -23,8 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1280px;
+    inline-size: 100%;
+    max-inline-size: 1280px;
 }
 
 .nav__logo-container {
@@ -32,14 +32,14 @@
 }
 
 .nav__logo-img {
-    width: 170px;
+    inline-size: 170px;
     object-fit: cover;
     object-position: center;
 }
 
 // Menu styles
 .nav__menu-container {
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 0;
     display: flex;
@@ -47,8 +47,8 @@
     align-items: center;
     overflow-y: scroll;
     overscroll-behavior: smooth;
-    width: 100%;
-    height: calc(100vh - 70px);
+    inline-size: 100%;
+    block-size: calc(100vh - 70px);
     background-color: $color-background;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    inline-size: 90%;
     padding: 12px 8px;
     margin: 20px 0;
     border: 1px solid $color-secoundary-border;
@@ -75,8 +75,8 @@
 }
 
 .nav__info-image {
-    width: 36px;
-    height: 36px;
+    inline-size: 36px;
+    block-size: 36px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -99,7 +99,7 @@
 
 // Nav-bar styles
 .nav__list {
-    width: 90%;
+    inline-size: 90%;
     border-block-start: 1px solid $color-primary-border;
     list-style: none;
 }
@@ -126,7 +126,7 @@
 }
 
 .nav__list-link--active {
-    border-bottom: 2px solid $color-primary;
+    border-block-end:  2px solid $color-primary;
 }
 
 // Nav contact styles
@@ -134,7 +134,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    inline-size: 90%;
     margin-block: 20px;
     border-block-start: 1px solid $color-primary-border;
 }
@@ -149,14 +149,14 @@
 .nav__contact-options {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    max-width: 500px;
+    inline-size: 100%;
+    max-inline-size: 500px;
     list-style: none;
 }
 
 .contact-options-link {
     display: block;
-    width: 60px;
+    inline-size: 60px;
     font-size: $font-size-sm;
     color: $color-textprimary;
     text-align: center;
@@ -165,7 +165,7 @@
 }
 
 .contact-options-link-img {
-    width: inherit;
+    inline-size: inherit;
     padding: 12px;
     margin-block-end: 4px;
     object-fit: contain;
@@ -179,16 +179,16 @@
 }
 
 .contact__line {
-    width: 50%;
-    height: 4px;
+    inline-size: 50%;
+    block-size: 4px;
     margin-block-start: 32px;
     background-color: $color-primary;
     border-radius: 1px;
 }
 
 .nav__btn-icon {
-    width: 50px;
-    height: 50px;
+    inline-size: 50px;
+    block-size: 50px;
     padding: 4px;
     background-color: $color-primary;
     border-radius: 50%;

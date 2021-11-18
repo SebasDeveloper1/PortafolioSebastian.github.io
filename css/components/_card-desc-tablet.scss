@@ -1,12 +1,12 @@
 .card-desc__image {
-    width: 40%;
+    inline-size: 40%;
 }
 
 .card-desc__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    inline-size: 60%;
 }
 
 .card-desc__info-title {

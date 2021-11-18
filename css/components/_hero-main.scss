@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 600px;
+    inline-size: 100%;
+    block-size: 600px;
     margin-block-start: 70px;
     background-image: $color-background-hero, url(https://i.postimg.cc/6qJQdqQ0/hero.jpg);
     background-position: center;
@@ -16,12 +16,12 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    width: 90%;
+    inline-size: 90%;
 }
 
 .hero__info-image {
-    width: 156px;
-    height: 156px;
+    inline-size: 156px;
+    block-size: 156px;
     margin-block-end: 20px;
     object-fit: cover;
     object-position: center;
