@@ -39,7 +39,7 @@
 
 // Menu styles
 .nav__menu-container {
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 0;
     display: flex;
@@ -126,7 +126,7 @@
 }
 
 .nav__list-link--active {
-    border-bottom: 2px solid $color-primary;
+    border-block-end:  2px solid $color-primary;
 }
 
 // Nav contact styles

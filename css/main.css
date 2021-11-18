@@ -81,7 +81,7 @@ body {
 }
 
 .nav__menu-container {
-  position: fixed;
+  position: absolute;
   top: 70px;
   left: 0;
   display: -webkit-box;
@@ -190,7 +190,8 @@ body {
 }
 
 .nav__list-link--active {
-  border-bottom: 2px solid #007aff;
+  -webkit-border-after: 2px solid #007aff;
+          border-block-end: 2px solid #007aff;
 }
 
 .nav__contact-container {
@@ -379,15 +380,9 @@ body {
 }
 
 .description-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   inline-size: 100%;
-  -webkit-margin-after: 200px;
-          margin-block-end: 200px;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
 }
 
 .card-desc {
@@ -399,6 +394,7 @@ body {
   overflow: hidden;
   inline-size: 90%;
   max-inline-size: 1280px;
+  margin: 0 auto;
   border-radius: 12px;
 }
 
@@ -443,6 +439,106 @@ body {
   inline-size: 20px;
   block-size: 20px;
   vertical-align: middle;
+}
+
+.secondary__button {
+  padding: 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 32px;
+  background-color: #3d4f91;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary__button:hover {
+  background-color: #3d4f91;
+}
+
+.abilities-main {
+  inline-size: 100%;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+.abilities-container {
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.abilities-container__title {
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+  padding-block: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-border-before: 1px solid #222e57;
+          border-block-start: 1px solid #222e57;
+}
+
+.abilities-container-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-ability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  inline-size: 100%;
+  max-inline-size: 400px;
+  -webkit-margin-after: 16px;
+          margin-block-end: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgba(61, 79, 145, 0.2);
+}
+
+.card-ability__image {
+  inline-size: 70px;
+  -webkit-margin-end: 12px;
+          margin-inline-end: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card-ability__name {
+  -webkit-margin-after: 4px;
+          margin-block-end: 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card-ability__desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #8da0bc;
+}
+
+.card-ability--more {
+  border: 1px dashed #007aff;
+}
+
+.card-ability__more {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: #007aff;
 }
 
 body {
