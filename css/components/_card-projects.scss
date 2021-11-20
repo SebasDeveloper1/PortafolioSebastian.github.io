@@ -1,0 +1,19 @@
+.projects-main {
+    inline-size: 100%;
+    margin-block-end: 70px;
+}
+
+.projects-container {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
+}
+
+.projects-container__title {
+    margin-block-end: 12px;
+    padding-block: 20px;
+    font-size: $font-size-lg2;
+    font-weight: bold;
+    color: $color-textprimary;
+    border-block-start: 1px solid $color-secoundary-border;
+}
