@@ -139,3 +139,26 @@ body {
   inline-size: 32.5%;
   max-inline-size: none;
 }
+
+.projects-main {
+  inline-size: 100%;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+.projects-container {
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.projects-container__title {
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+  padding-block: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-border-before: 1px solid #222e57;
+          border-block-start: 1px solid #222e57;
+}

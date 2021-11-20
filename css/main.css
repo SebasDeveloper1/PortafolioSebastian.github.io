@@ -441,22 +441,6 @@ body {
   vertical-align: middle;
 }
 
-.secondary__button {
-  padding: 12px;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 32px;
-  background-color: #3d4f91;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.secondary__button:hover {
-  background-color: #3d4f91;
-}
-
 .abilities-main {
   inline-size: 100%;
   -webkit-margin-after: 70px;
@@ -499,6 +483,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   inline-size: 100%;
+  block-size: 100px;
   max-inline-size: 400px;
   -webkit-margin-after: 16px;
           margin-block-end: 16px;
@@ -539,6 +524,29 @@ body {
   margin: 0 auto;
   font-size: 1.8rem;
   color: #007aff;
+}
+
+.projects-main {
+  inline-size: 100%;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+.projects-container {
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.projects-container__title {
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+  padding-block: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-border-before: 1px solid #222e57;
+          border-block-start: 1px solid #222e57;
 }
 
 body {

@@ -26,7 +26,7 @@ window.addEventListener("resize", function(){
             links.style.transition = "none";
             menu_Status = true;
             document.getElementById("hamburger").src ="./assets/icons/menu.svg";
-        }        
+        }
     }else{
         if(menu_Status){
             toggleMenu();
