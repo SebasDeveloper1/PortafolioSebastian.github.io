@@ -1,13 +1,14 @@
 @import "./primary-button";
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     inline-size: 100%;
 }
 
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,11 +119,6 @@
 
 .nav__list-item--cta {
     display: none;
-}
-
-.nav__list-link--cta:hover {
-    color: $color-textprimary;
-    background-color: $color-primary-opacity;
 }
 
 .nav__list-link--active {

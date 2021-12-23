@@ -2,6 +2,7 @@
 $color-primary: #007aff;
 $color-primary-opacity: #007bffd8;
 $color-secondary: #3d4f91;
+$color-secondary-opacity: #3d4f91d8;
 $color-background: #080f28;
 $color-background-light: #141a32;
 $color-back-button-secondary: #181f36;
@@ -36,4 +37,8 @@ html {
 
 body {
     font-family: $font-primary;
+}
+
+main{
+    z-index: 90;
 }
