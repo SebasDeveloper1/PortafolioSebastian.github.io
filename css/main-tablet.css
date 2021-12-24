@@ -44,6 +44,55 @@
   display: none;
 }
 
+@-webkit-keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes introScale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes introScale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +148,11 @@ main {
   font-size: 2.4rem;
 }
 
+.description-main {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
 .card-desc__image {
   inline-size: 40%;
 }
@@ -133,6 +187,11 @@ main {
       align-self: start;
 }
 
+.abilities-main {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
 .abilities-container-cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -144,6 +203,11 @@ main {
   max-inline-size: none;
 }
 
+.projects-main {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
 .projects-container-cards {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -151,9 +215,7 @@ main {
 }
 
 .card-project {
-  max-inline-size: 300px;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  max-inline-size: 30%;
 }
 
 .project-info {

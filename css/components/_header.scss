@@ -121,6 +121,10 @@
     display: none;
 }
 
+.nav__list-link--cta:hover {
+    color: $color-textprimary;
+}
+
 .nav__list-link--active {
     border-block-end: 2px solid $color-primary;
 }
@@ -172,6 +176,7 @@
 
 .contact-options-link-img:hover {
     background-color: $color-secondary;
+    animation: cta 0.3s ease-in-out;
 }
 
 .contact__line {

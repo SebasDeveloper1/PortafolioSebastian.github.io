@@ -25,6 +25,31 @@ $font-size-lg2: 2.4rem;
 $font-size-xl: 4rem;
 $font-size-xxl: 6rem;
 
+//keyframes
+@keyframes cta {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes introScale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +64,6 @@ body {
     font-family: $font-primary;
 }
 
-main{
+main {
     z-index: 90;
 }

@@ -1,3 +1,51 @@
+@-webkit-keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes introScale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes introScale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -189,6 +237,10 @@ main {
   display: none;
 }
 
+.nav__list-link--cta:hover {
+  color: #ffffff;
+}
+
 .nav__list-link--active {
   -webkit-border-after: 2px solid #007aff;
           border-block-end: 2px solid #007aff;
@@ -254,6 +306,8 @@ main {
 
 .contact-options-link-img:hover {
   background-color: #3d4f91;
+  -webkit-animation: cta 0.3s ease-in-out;
+          animation: cta 0.3s ease-in-out;
 }
 
 .contact__line {
@@ -285,7 +339,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   inline-size: 100%;
-  block-size: 600px;
+  block-size: calc(100vh - 70px);
   -webkit-margin-before: 70px;
           margin-block-start: 70px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #080f285e), to(#080f28)), url(https://i.postimg.cc/6qJQdqQ0/hero.jpg);
@@ -310,6 +364,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   inline-size: 90%;
+  -webkit-animation: introScale 1.2s;
+          animation: introScale 1.2s;
 }
 
 .hero__info-image {
@@ -363,6 +419,11 @@ main {
   font-size: 1.8rem;
 }
 
+.hero__text-cta:hover {
+  -webkit-animation: cta 0.3s ease-in-out;
+          animation: cta 0.3s ease-in-out;
+}
+
 .secondary__button {
   padding: 12px;
   font-size: 1.6rem;
@@ -376,7 +437,7 @@ main {
 }
 
 .secondary__button:hover {
-  background-color: #3d4f91d8;
+  background-color: #007aff;
 }
 
 .description-main {
@@ -459,6 +520,7 @@ main {
   padding-block: 20px;
   font-size: 2.4rem;
   font-weight: bold;
+  line-height: 36px;
   color: #ffffff;
   -webkit-border-before: 1px solid #222e57;
           border-block-start: 1px solid #222e57;
@@ -473,6 +535,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 16px;
 }
 
 .card-ability {
@@ -485,8 +548,6 @@ main {
   inline-size: 100%;
   block-size: 100px;
   max-inline-size: 400px;
-  -webkit-margin-after: 16px;
-          margin-block-end: 16px;
   padding: 12px;
   border-radius: 8px;
   background-color: rgba(61, 79, 145, 0.2);
@@ -544,6 +605,7 @@ main {
   padding-block: 20px;
   font-size: 2.4rem;
   font-weight: bold;
+  line-height: 36px;
   color: #ffffff;
   -webkit-border-before: 1px solid #222e57;
           border-block-start: 1px solid #222e57;
@@ -558,6 +620,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 30px;
 }
 
 .card-project {
@@ -566,8 +629,6 @@ main {
   inline-size: 100%;
   block-size: 280px;
   max-inline-size: 400px;
-  -webkit-margin-after: 60px;
-          margin-block-end: 60px;
   border-radius: 12px;
 }
 
@@ -595,6 +656,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 4px;
   inline-size: 100%;
   block-size: 50%;
   padding: 16px;
@@ -603,17 +665,13 @@ main {
 }
 
 .project-info__title {
-  -webkit-margin-after: 4px;
-          margin-block-end: 4px;
   font-size: 1.8rem;
   font-weight: 600;
   color: #ffffff;
 }
 
 .project-info__desc {
-  -webkit-margin-after: 4px;
-          margin-block-end: 4px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   color: #8da0bc;
 }
