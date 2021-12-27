@@ -3,7 +3,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  50% {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -17,7 +17,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  50% {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -59,6 +59,19 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #141a32;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #007aff;
+  border-radius: 10px;
 }
 
 main {
@@ -594,12 +607,18 @@ main {
 }
 
 .projects-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "top" "main" "button";
   inline-size: 90%;
   max-inline-size: 1280px;
   margin: 0 auto;
 }
 
 .projects-container__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: top;
   -webkit-margin-after: 12px;
           margin-block-end: 12px;
   padding-block: 20px;
@@ -612,6 +631,9 @@ main {
 }
 
 .projects-container-cards {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +723,7 @@ main {
 
 .info-links__link {
   display: inherit;
-  padding: 4px;
+  padding: 8px;
   border-radius: 50%;
   -webkit-margin-start: 8px;
           margin-inline-start: 8px;
@@ -709,12 +731,69 @@ main {
 
 .info-links__icon {
   display: inherit;
-  inline-size: 36px;
-  block-size: 36px;
+  inline-size: 30px;
+  block-size: 30px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.more-projects__cta {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: button;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center;
+  display: inline-block;
+  inline-size: 60%;
+  -webkit-margin-before: 32px;
+          margin-block-start: 32px;
+  padding: 16px 20px;
+}
+
+.more-projects__cta:hover {
+  -webkit-animation: cta 0.3s ease-in-out;
+          animation: cta 0.3s ease-in-out;
+}
+
+.contact-main {
+  inline-size: 100%;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+.contact-container {
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.contact-container__title {
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+  padding-block: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 36px;
+  color: #ffffff;
+  -webkit-border-before: 1px solid #222e57;
+          border-block-start: 1px solid #222e57;
+}
+
+.nav__contact-options--section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-inline-size: none;
+  row-gap: 50px;
+}
+
+.contact-options-link--section {
+  inline-size: 80px;
 }
 
 body {

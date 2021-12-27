@@ -4,12 +4,18 @@
 }
 
 .projects-container {
+    display: grid;
+    grid-template-areas:
+        "top"
+        "main"
+        "button";
     inline-size: 90%;
     max-inline-size: 1280px;
     margin: 0 auto;
 }
 
 .projects-container__title {
+    grid-area: top;
     margin-block-end: 12px;
     padding-block: 20px;
     font-size: $font-size-lg2;
@@ -20,6 +26,7 @@
 }
 
 .projects-container-cards {
+    grid-area: main;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,15 +98,28 @@
 
 .info-links__link {
     display: inherit;
-    padding: 4px;
+    padding: 8px;
     border-radius: 50%;
     margin-inline-start: 8px;
 }
 
 .info-links__icon {
     display: inherit;
-    inline-size: 36px;
-    block-size: 36px;
+    inline-size: 30px;
+    block-size: 30px;
     object-fit: cover;
     object-position: center;
+}
+
+.more-projects__cta {
+    grid-area: button;
+    place-self: center;
+    display: inline-block;
+    inline-size: 60%;
+    margin-block-start: 32px;
+    padding: 16px 20px;
+}
+
+.more-projects__cta:hover {
+    animation: cta 0.3s ease-in-out;
 }

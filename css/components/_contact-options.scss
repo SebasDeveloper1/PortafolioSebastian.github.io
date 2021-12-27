@@ -1,0 +1,31 @@
+.contact-main {
+    inline-size: 100%;
+    margin-block-end: 70px;
+}
+
+.contact-container {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
+}
+
+.contact-container__title {
+    margin-block-end: 12px;
+    padding-block: 20px;
+    font-size: $font-size-lg2;
+    font-weight: bold;
+    line-height: 36px;
+    color: $color-textprimary;
+    border-block-start: 1px solid $color-secoundary-border;
+}
+
+.nav__contact-options--section {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-inline-size: none;
+    row-gap: 50px;
+}
+
+.contact-options-link--section {
+    inline-size: 80px;
+}
