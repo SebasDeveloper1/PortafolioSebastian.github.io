@@ -117,7 +117,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #007aff;
+  background-color: #007bff;
   border-radius: 10px;
 }
 
@@ -242,7 +242,11 @@ main {
   opacity: 1;
 }
 
-.contac-main {
+.more-projects__cta {
+  inline-size: 600px;
+}
+
+.contact-main {
   -webkit-margin-after: 100px;
           margin-block-end: 100px;
 }
@@ -251,4 +255,18 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.contact-container__sentence {
+  font-size: 2.4rem;
+}
+
+.nav__contact-options--section {
+  padding: 70px 0;
+}
+
+.contact-options-link--section {
+  font-size: 1.8rem;
+  font-weight: 400;
+  inline-size: 120px;
 }

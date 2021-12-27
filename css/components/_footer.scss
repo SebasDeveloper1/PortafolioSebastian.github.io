@@ -1,0 +1,38 @@
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 200px;
+    background-color: $color-background-light;
+    border-block-start: 1px solid $color-primary-opacity;
+}
+
+.footer-container {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    inline-size: 40px;
+    block-size: 40px;
+    object-fit: cover;
+    object-position: center;
+    margin-block-end: 12px;
+}
+
+.footer__title {
+    font-size: $font-size-md;
+    font-weight: 400;
+    color: $color-textprimary;
+    margin-block-end: 12px;
+}
+
+.footer__sentence {
+    font-size: $font-size-sm;
+    font-weight: 400;
+    color: $color-textthird;
+}

@@ -1,0 +1,34 @@
+.nav__contact-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    inline-size: 100%;
+    max-inline-size: 500px;
+    list-style: none;
+}
+
+.contact-options-link {
+    display: inline-block;
+    inline-size: 60px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: $color-textprimary;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-options-link-img {
+    inline-size: inherit;
+    padding: 12px;
+    margin-block-end: 4px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    background-color: $color-back-button-secondary;
+    cursor: pointer;
+}
+
+.contact-options-link-img:hover {
+    background-color: $color-secondary;
+    animation: cta 0.3s ease-in-out;
+}

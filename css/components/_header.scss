@@ -1,4 +1,5 @@
 @import "./primary-button";
+@import "./options-contact";
 
 .header {
     position: fixed;
@@ -144,39 +145,6 @@
     font-size: $font-size-xl;
     font-weight: 700;
     color: $color-textsecund;
-}
-
-.nav__contact-options {
-    display: flex;
-    justify-content: space-around;
-    inline-size: 100%;
-    max-inline-size: 500px;
-    list-style: none;
-}
-
-.contact-options-link {
-    display: block;
-    inline-size: 60px;
-    font-size: $font-size-sm;
-    color: $color-textprimary;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.contact-options-link-img {
-    inline-size: inherit;
-    padding: 12px;
-    margin-block-end: 4px;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 50%;
-    background-color: $color-back-button-secondary;
-}
-
-.contact-options-link-img:hover {
-    background-color: $color-secondary;
-    animation: cta 0.3s ease-in-out;
 }
 
 .contact__line {
