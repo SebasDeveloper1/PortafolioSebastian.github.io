@@ -1,3 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #141a32;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+main {
+  z-index: 90;
+}
+
+.return__btn-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.return__btn-icon {
+  inline-size: 60px;
+  block-size: 60px;
+}
+
 @-webkit-keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -12,6 +56,7 @@
             transform: scale(1);
   }
 }
+
 @keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -46,38 +91,6 @@
             transform: scale(1);
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Raleway", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #141a32;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #007bff;
-  border-radius: 10px;
-}
-
-main {
-  z-index: 90;
-}
-
 .primary__button {
   padding: 12px;
   font-size: 1.6rem;
@@ -750,6 +763,7 @@ main {
   -ms-grid-column-align: center;
   place-self: center;
   display: inline-block;
+  inline-size: auto;
   -webkit-margin-before: 32px;
           margin-block-start: 32px;
   padding: 16px 20px;

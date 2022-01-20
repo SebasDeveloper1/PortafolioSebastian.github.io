@@ -1,5 +1,5 @@
 // Colors
-$color-primary: rgb(0, 123, 255);
+$color-primary: #007bff;
 $color-primary-opacity: #007bffd8;
 $color-secondary: #3d4f91;
 $color-secondary-opacity: #3d4f91d8;
@@ -25,31 +25,6 @@ $font-size-lg: 1.8rem;
 $font-size-lg2: 2.4rem;
 $font-size-xl: 4rem;
 $font-size-xxl: 6rem;
-
-//keyframes
-@keyframes cta {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes introScale {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
 
 * {
     margin: 0;
@@ -78,4 +53,16 @@ body::-webkit-scrollbar-thumb {
 
 main {
     z-index: 90;
+}
+
+//Return nav__btn
+.return__btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.return__btn-icon {
+    inline-size: 60px;
+    block-size: 60px;
 }
