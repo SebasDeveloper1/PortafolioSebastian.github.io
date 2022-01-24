@@ -17,13 +17,7 @@
 
 .contact-container__title {
     grid-area: title;
-    margin-block-end: 12px;
-    padding-block: 20px;
-    font-size: $font-size-lg2;
-    font-weight: bold;
-    line-height: 36px;
-    color: $color-textprimary;
-    border-block-start: 1px solid $color-secoundary-border;
+    @include titleSectionIndex;
 }
 
 .contact-container__sentence {

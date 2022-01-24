@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: center;
     inline-size: 100%;
-    block-size: calc(100vh - 70px);
-    margin-block-start: 70px;
+    block-size: 100vh;
     background-image: $color-background-hero, url(https://i.postimg.cc/6qJQdqQ0/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -33,21 +32,21 @@
 .hero__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
 }
 
 .hero__text-title {
+    margin: 20px 0;
     font-size: $font-size-xl;
     font-weight: bold;
     color: $color-textprimary;
 }
 
 .hero__text-subtitle {
-    margin-block-start: 8px;
     margin-block-end: 40px;
-    font-size: $font-size-lg;
+    font-size: $font-size-lg2;
     color: $color-textprimary;
 }
 

@@ -32,9 +32,8 @@ main {
 
 .return__btn-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
+  bottom: 30px;
+  right: 30px;
 }
 
 .return__btn-icon {
@@ -368,9 +367,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   inline-size: 100%;
-  block-size: calc(100vh - 70px);
-  -webkit-margin-before: 70px;
-          margin-block-start: 70px;
+  block-size: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #080f285e), to(#080f28)), url(https://i.postimg.cc/6qJQdqQ0/hero.jpg);
   background-image: linear-gradient(180deg, #080f285e 25%, #080f28 100%), url(https://i.postimg.cc/6qJQdqQ0/hero.jpg);
   background-position: center;
@@ -418,9 +415,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -428,17 +425,16 @@ main {
 }
 
 .hero__text-title {
+  margin: 20px 0;
   font-size: 4rem;
   font-weight: bold;
   color: #ffffff;
 }
 
 .hero__text-subtitle {
-  -webkit-margin-before: 8px;
-          margin-block-start: 8px;
   -webkit-margin-after: 40px;
           margin-block-end: 40px;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   color: #ffffff;
 }
 
@@ -623,18 +619,26 @@ main {
 }
 
 .projects-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "top" "main" "button";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   inline-size: 90%;
   max-inline-size: 1280px;
   margin: 0 auto;
 }
 
 .projects-container__title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: top;
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: start;
+  place-self: start;
+  inline-size: 100%;
   -webkit-margin-after: 12px;
           margin-block-end: 12px;
   padding-block: 20px;
@@ -647,9 +651,6 @@ main {
 }
 
 .projects-container-cards {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,17 +757,10 @@ main {
 }
 
 .more-projects__cta {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: button;
-  -ms-grid-row-align: center;
-  -ms-grid-column-align: center;
-  place-self: center;
   display: inline-block;
-  inline-size: auto;
   -webkit-margin-before: 32px;
           margin-block-start: 32px;
-  padding: 16px 20px;
+  padding: 16px;
 }
 
 .more-projects__cta:hover {
