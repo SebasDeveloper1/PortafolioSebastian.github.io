@@ -34,6 +34,15 @@ main {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.return__btn-container:hover {
+  -webkit-animation: cta 0.3s ease-in-out;
+          animation: cta 0.3s ease-in-out;
 }
 
 .return__btn-icon {
@@ -47,8 +56,8 @@ main {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -62,15 +71,15 @@ main {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 }
-@-webkit-keyframes introScale {
+@-webkit-keyframes entranceScale {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -80,7 +89,7 @@ main {
             transform: scale(1);
   }
 }
-@keyframes introScale {
+@keyframes entranceScale {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -90,6 +99,112 @@ main {
             transform: scale(1);
   }
 }
+@-webkit-keyframes entranceAnimationTop {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes entranceAnimationTop {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes entranceAnimationBottom {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes entranceAnimationBottom {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes entranceAnimationRight {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes entranceAnimationRight {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes entranceAnimationLeft {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes entranceAnimationLeft {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.entrance-animation {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.entrance-animation-top {
+  -webkit-animation: entranceAnimationTop 0.5s;
+          animation: entranceAnimationTop 0.5s;
+}
+
+.entrance-animation-bottom {
+  -webkit-animation: entranceAnimationBottom 0.5s;
+          animation: entranceAnimationBottom 0.5s;
+}
+
+.entrance-animation-right {
+  -webkit-animation: entranceAnimationRight 0.5s;
+          animation: entranceAnimationRight 0.5s;
+}
+
+.entrance-animation-left {
+  -webkit-animation: entranceAnimationLeft 0.5s;
+          animation: entranceAnimationLeft 0.5s;
+}
+
 .primary__button {
   padding: 12px;
   font-size: 1.6rem;
@@ -390,8 +505,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   inline-size: 90%;
-  -webkit-animation: introScale 1.2s;
-          animation: introScale 1.2s;
+  -webkit-animation: entranceScale 1.2s;
+          animation: entranceScale 1.2s;
 }
 
 .hero__info-image {
@@ -531,6 +646,12 @@ main {
   inline-size: 100%;
   -webkit-margin-after: 70px;
           margin-block-end: 70px;
+}
+
+.entrance-animation {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .abilities-container {
@@ -764,6 +885,84 @@ main {
 }
 
 .more-projects__cta:hover {
+  -webkit-animation: cta 0.3s ease-in-out;
+          animation: cta 0.3s ease-in-out;
+}
+
+.studies-main {
+  inline-size: 100%;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+.studies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.studies-container__title {
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: start;
+  place-self: start;
+  inline-size: 100%;
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+  padding-block: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 36px;
+  color: #ffffff;
+  -webkit-border-before: 1px solid #222e57;
+          border-block-start: 1px solid #222e57;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+
+.studies-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 30px;
+  inline-size: 100%;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+
+.studies-item__img {
+  inline-size: 100%;
+  max-inline-size: 350px;
+  padding: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+  border: 1.5px dashed #007bff;
+}
+
+.more-studies__cta {
+  display: inline-block;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+  padding: 16px;
+}
+
+.more-studies__cta:hover {
   -webkit-animation: cta 0.3s ease-in-out;
           animation: cta 0.3s ease-in-out;
 }

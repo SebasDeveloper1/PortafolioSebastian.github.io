@@ -2,7 +2,6 @@
     margin-block-end: 100px;
 }
 
-
 .abilities-container-cards {
     justify-content: space-between;
 }
@@ -10,4 +9,9 @@
 .card-ability {
     inline-size: 32.5%;
     max-inline-size: none;
+}
+
+.card-ability__image:hover {
+    transform: translate(0, -10px) rotate(10deg);
+    animation: all 5s ease-in;
 }

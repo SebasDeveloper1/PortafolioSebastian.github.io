@@ -1,0 +1,18 @@
+.studies-main {
+    margin-block-end: 100px;
+}
+
+.studies-item__img {
+    opacity: 0.8;
+    transition: transform 0.1s ease-in-out;
+}
+
+.studies-item__img:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: translate(0, -20px);
+}
+
+.more-studies__cta {
+    inline-size: 600px;
+}
