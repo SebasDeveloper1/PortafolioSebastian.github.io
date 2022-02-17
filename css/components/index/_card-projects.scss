@@ -89,7 +89,6 @@
 }
 
 .info-links__link {
-    display: inherit;
     padding: 8px;
     border-radius: 50%;
     margin-inline-start: 8px;
@@ -104,9 +103,8 @@
 }
 
 .more-projects__cta {
-    display: inline-block;
-    margin-block-start: 32px;
     padding: 16px;
+    margin-block-start: 32px;
 }
 
 .more-projects__cta:hover {

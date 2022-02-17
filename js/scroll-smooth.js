@@ -15,6 +15,6 @@ function scrollTo(element) {
 }
 
 buttonUp.addEventListener('click', function (event) {
-    scrollTo('#heroSectionIndex');
+    scrollTo('#top');
     event.preventDefault();
 });

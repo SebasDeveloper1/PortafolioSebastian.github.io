@@ -1,7 +1,10 @@
-@import "./components/header-tablet";
-@import "./components/hero-main-tablet";
-@import "./components/card-desc-tablet";
-@import "./components/card-abilities-tablet";
-@import "./components/card-projects-tablet";
-@import "./components/studies-section-tablet";
-@import "./components/contact-section-tablet";
+@import "./components/globals/golbals";
+@import "./components/globals/mixins-index";
+@import "./components/globals/animations";
+@import "./components/header/header-tablet";
+@import "./components/index/hero-main-tablet";
+@import "./components/index/card-desc-tablet";
+@import "./components/index/card-abilities-tablet";
+@import "./components/index/card-projects-tablet";
+@import "./components/index/studies-section-tablet";
+@import "./components/index/contact-section-tablet";

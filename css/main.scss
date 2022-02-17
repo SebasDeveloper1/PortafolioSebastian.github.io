@@ -1,15 +1,17 @@
-@import "./components/golbals";
-@import "./components/mixins-index";
-@import "./components/animations";
-@import "./components/header";
-@import "./components/hero-main";
-@import "./components/card-desc";
-@import "./components/card-abilities";
-@import "./components/card-projects";
-@import "./components/studies-section";
-@import "./components/contact-section";
-@import "./components/footer";
+@import "./components/globals/golbals";
+@import "./components/buttons/buttons-group";
+@import "./components/globals/mixins-index";
+@import "./components/globals/animations";
+@import "./components/header/header";
+@import "./components/index/hero-main";
+@import "./components/index/card-desc";
+@import "./components/index/card-abilities";
+@import "./components/index/card-projects";
+@import "./components/index/studies-section";
+@import "./components/index/contact-section";
+@import "./components/footer/footer";
 
 body {
     background-color: $color-background;
+    overflow-x: hidden;
 }

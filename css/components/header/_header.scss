@@ -1,5 +1,4 @@
-@import "./primary-button";
-@import "./options-contact";
+@import "../globals/options-contact";
 
 .header {
     position: fixed;
@@ -99,6 +98,10 @@
     color: $color-textprimary;
 }
 
+.nav__data-btn {
+    padding: 12px;
+}
+
 // Nav-bar styles
 .nav__list {
     inline-size: 90%;
@@ -120,6 +123,10 @@
 
 .nav__list-item--cta {
     display: none;
+}
+
+.nav__list-link--cta {
+    padding: 0 16px;
 }
 
 .nav__list-link--cta:hover {
