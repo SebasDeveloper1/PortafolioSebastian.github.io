@@ -325,7 +325,7 @@ main {
 }
 
 .nav__logo-img {
-  inline-size: 170px;
+  inline-size: 160px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -427,7 +427,7 @@ main {
 .nav__list-link {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 3;
+  line-height: 2.6;
   color: #ffffff;
   text-decoration: none;
 }
@@ -631,8 +631,7 @@ main {
 .card-desc__info-paragraph {
   -webkit-margin-after: 16px;
           margin-block-end: 16px;
-  font-size: 1.4rem;
-  text-align: justify;
+  font-size: 1.6rem;
   line-height: 1.5;
   color: #8da0bc;
 }

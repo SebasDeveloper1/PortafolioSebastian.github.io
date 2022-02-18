@@ -3,3 +3,11 @@
 @import "./components/globals/mixins-index";
 @import "./components/globals/animations";
 @import "./components/header/header";
+@import "./components/about-me/hero-about";
+@import "./components/about-me/description-about";
+@import "./components/index/contact-section";
+@import "./components/footer/footer";
+
+body {
+    background-color: $color-background;
+}

@@ -5,10 +5,12 @@ $color-secondary: #3d4f91;
 $color-secondary-opacity: #3d4f91d8;
 $color-background: #080f28;
 $color-background-light: #141a32;
+$color-background-secondary: #f6f6f6;
 $color-back-button-secondary: #181f36;
 $color-background-hero: linear-gradient(180deg, #080f285e 25%, #080f28 100%);
 $color-background-image-main: linear-gradient(to top, #080f28, #080f2888, #080f28);
 $color-textprimary: #ffffff;
+$color-textprimary-dark: #080f28;
 $color-textsecund: #4f6b95;
 $color-textthird: #edb709;
 $color-textfourth: #8da0bc;
@@ -26,7 +28,8 @@ $font-size-md: 1.6rem;
 $font-size-lg: 1.8rem;
 $font-size-lg2: 2.4rem;
 $font-size-xl: 4rem;
-$font-size-xxl: 6rem;
+$font-size-xxl: 5rem;
+$font-size-xxxl: 6rem;
 
 //Golbals styles
 * {

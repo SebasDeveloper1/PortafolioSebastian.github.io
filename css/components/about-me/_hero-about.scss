@@ -1,0 +1,35 @@
+.hero-about {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    inline-size: 100%;
+    block-size: 30vh;
+    margin-block-start: 70px;
+    background-image: url(https://i.postimg.cc/J762KyTc/card.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-about__container-info {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin-block-end: 32px;
+    animation: entranceAnimationTop 1.2s;
+}
+
+.container-info__text-title {
+    margin: 0;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    color: $color-textprimary;
+    text-align: center;
+}
+
+.info__text-title-decoration {
+    inline-size: 160px;
+    block-size: 3px;
+    margin: 0 auto;
+    margin-block-start: 8px;
+    background-color: $color-primary;
+}

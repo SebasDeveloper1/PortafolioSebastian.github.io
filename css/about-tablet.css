@@ -230,3 +230,51 @@ main {
 .nav__btn-container {
   display: none;
 }
+
+.hero-about {
+  block-size: 60vh;
+}
+
+.hero-about__container-info {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
+.container-info__text-title {
+  font-size: 6rem;
+}
+
+.about-article {
+  padding: 24px;
+}
+
+.about-article__paragraph {
+  -webkit-margin-after: 1.8rem;
+          margin-block-end: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.contact-main {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
+.contact-container-options {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-container__sentence {
+  font-size: 2.4rem;
+}
+
+.nav__contact-options--section {
+  padding: 70px 0;
+}
+
+.contact-options-link--section {
+  font-size: 1.8rem;
+  font-weight: 400;
+  inline-size: 120px;
+}
