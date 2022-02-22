@@ -1,0 +1,62 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 100vw;
+}
+
+.container-slider {
+    position: relative;
+    inline-size: 100%;
+    margin: auto;
+    margin-block-start: 70px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    inline-size: 400%; // 100% por cada imagen que compone el slider
+    block-size: 40vh;
+    margin-inline-start: -100%;
+}
+
+.slider__section {
+    inline-size: 100%;
+}
+
+.slider__img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    cursor: pointer;
+}
+
+.slider__btn--right {
+    right: 10px;
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn-icon {
+    inline-size: 40px;
+    block-size: 40px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: $color-secondary-opacity;
+}
+
+.slider__btn-icon:hover {
+    background-color: $color-secondary;
+    animation: cta 0.3s ease-in-out;
+}
