@@ -78,8 +78,14 @@ main {
 }
 
 .return__btn-icon {
-  inline-size: 60px;
-  block-size: 60px;
+  inline-size: 50px;
+  block-size: 50px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.return__btn-icon:hover {
+  background-color: #3d4f91;
 }
 
 @-webkit-keyframes cta {
@@ -347,8 +353,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   overflow-y: scroll;
-  -ms-scroll-chaining: smooth;
-      overscroll-behavior: smooth;
   inline-size: 100%;
   block-size: calc(100vh - 70px);
   background-color: #080f28;
@@ -480,8 +484,7 @@ main {
 .contact__line {
   inline-size: 50%;
   block-size: 4px;
-  -webkit-margin-before: 32px;
-          margin-block-start: 32px;
+  margin-block: 32px;
   background-color: #007bff;
   border-radius: 1px;
 }
@@ -504,9 +507,9 @@ main {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   inline-size: 100%;
-  block-size: 50vh;
+  block-size: 60vh;
   background-image: url(https://i.postimg.cc/J762KyTc/card.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -537,6 +540,8 @@ main {
   -webkit-margin-before: 8px;
           margin-block-start: 8px;
   background-color: #007bff;
+  -webkit-animation: entranceScale 1.2s;
+          animation: entranceScale 1.2s;
 }
 
 .description-about {
@@ -566,7 +571,6 @@ main {
 
 .about-article__paragraph span {
   font-weight: bold;
-  color: #4f6b95;
 }
 
 .about-article__paragraph a {
@@ -623,8 +627,8 @@ main {
 
 .contact-main {
   inline-size: 100%;
-  -webkit-margin-after: 70px;
-          margin-block-end: 70px;
+  -webkit-margin-after: 54px;
+          margin-block-end: 54px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#080f28), color-stop(#080f2888), to(#080f28)), url(https://i.postimg.cc/PqVMmkJK/image-banner.jpgS);
   background-image: linear-gradient(to top, #080f28, #080f2888, #080f28), url(https://i.postimg.cc/PqVMmkJK/image-banner.jpgS);
   background-size: cover;
@@ -683,7 +687,6 @@ main {
   place-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px;
   -webkit-box-pack: none;
       -ms-flex-pack: none;
           justify-content: none;
@@ -695,6 +698,7 @@ main {
   inline-size: 95px;
   font-size: 1.6rem;
   font-weight: 500;
+  margin: 16px;
 }
 
 .footer-main {

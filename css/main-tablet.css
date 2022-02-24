@@ -262,8 +262,6 @@ main {
 }
 
 .hero__text-subtitle {
-  -webkit-margin-after: 40px;
-          margin-block-end: 40px;
   font-size: 4rem;
 }
 
@@ -305,8 +303,8 @@ main {
 }
 
 .abilities-main {
-  -webkit-margin-after: 100px;
-          margin-block-end: 100px;
+  -webkit-margin-after: 84px;
+          margin-block-end: 84px;
 }
 
 .abilities-container-cards {
@@ -381,8 +379,8 @@ main {
 }
 
 .contact-main {
-  -webkit-margin-after: 100px;
-          margin-block-end: 100px;
+  -webkit-margin-after: 84px;
+          margin-block-end: 84px;
 }
 
 .contact-container-options {

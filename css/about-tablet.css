@@ -232,7 +232,7 @@ main {
 }
 
 .hero-about {
-  block-size: 75vh;
+  block-size: 70vh;
 }
 
 .hero-about__container-info {
@@ -255,8 +255,8 @@ main {
 }
 
 .contact-main {
-  -webkit-margin-after: 100px;
-          margin-block-end: 100px;
+  -webkit-margin-after: 84px;
+          margin-block-end: 84px;
 }
 
 .contact-container-options {

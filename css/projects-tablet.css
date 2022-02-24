@@ -232,13 +232,39 @@ main {
 }
 
 .slider {
-  block-size: 65vh;
+  block-size: 70vh;
 }
 
-.slider__btn--right {
-  right: 30px;
+.container-info__text-title {
+  font-size: 6rem;
 }
 
-.slider__btn--left {
-  left: 30px;
+.projects-main {
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+}
+
+.projects-container-cards {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-project {
+  max-inline-size: 30%;
+}
+
+.project-info {
+  block-size: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.project-info:hover {
+  opacity: 1;
+}
+
+.more-projects__cta {
+  inline-size: 600px;
 }

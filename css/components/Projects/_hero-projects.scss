@@ -9,15 +9,24 @@
     position: relative;
     inline-size: 100%;
     margin: auto;
-    margin-block-start: 70px;
     overflow: hidden;
 }
 
 .slider {
     display: flex;
     inline-size: 400%; // 100% por cada imagen que compone el slider
-    block-size: 40vh;
+    block-size: 60vh;
     margin-inline-start: -100%;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background: $color-background-hero-projects;
 }
 
 .slider__section {
@@ -29,31 +38,52 @@
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
-    opacity: 0.8;
 }
 
-.slider__btn {
+.hero-projects__container-info {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inline-size: auto;
+    max-inline-size: 1280px;
 }
 
-.slider__btn--right {
-    right: 10px;
+.container-info__text-title {
+    margin: 0;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    color: $color-textprimary;
+    text-align: center;
+    animation: entranceAnimationTop 1.2s;
 }
 
-.slider__btn--left {
-    left: 10px;
+.info__text-title-decoration {
+    inline-size: 160px;
+    block-size: 3px;
+    margin: 0 auto;
+    margin: 16px 0 32px 0;
+    background-color: $color-primary;
+    animation: entranceAnimationTop 1.2s;
+}
+
+.buttons-slider {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 90px;
+    animation: entranceScale 1.2s;
 }
 
 .slider__btn-icon {
-    inline-size: 40px;
-    block-size: 40px;
+    inline-size: 35px;
+    block-size: 35px;
     padding: 4px;
     border-radius: 50%;
-    background-color: $color-secondary-opacity;
+    background-color: rgba($color-secondary, 0.5);
+    cursor: pointer;
 }
 
 .slider__btn-icon:hover {

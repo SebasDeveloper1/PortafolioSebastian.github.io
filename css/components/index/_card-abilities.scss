@@ -1,6 +1,6 @@
 .abilities-main {
     inline-size: 100%;
-    margin-block-end: 70px;
+    margin-block-end: 54px;
 }
 
 .abilities-container {
@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 16px;
 }
 
 .card-ability {
@@ -27,6 +26,7 @@
     block-size: 100px;
     max-inline-size: 400px;
     padding: 12px;
+    margin-block-end: 16px;
     border-radius: 8px;
     background-color: rgba($color-secondary, 0.2);
 }

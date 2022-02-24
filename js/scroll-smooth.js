@@ -3,7 +3,7 @@ buttonUp = document.getElementById('goToUpButton');
 window.onscroll = function () {
     let scroll = document.documentElement.scrollTop;
 
-    if (scroll > 400) {
+    if (scroll > 500) {
         buttonUp.style.transform = 'scale(1)';
     } else {
         buttonUp.style.transform = 'scale(0)';

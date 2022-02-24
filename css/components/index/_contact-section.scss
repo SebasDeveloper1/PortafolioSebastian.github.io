@@ -1,6 +1,6 @@
 .contact-main {
     inline-size: 100%;
-    margin-block-end: 70px;
+    margin-block-end: 54px;
     background-image: $color-background-image-main, url(https://i.postimg.cc/PqVMmkJK/image-banner.jpgS);
     background-size: cover;
     background-position: center;
@@ -38,7 +38,6 @@
     grid-area: content;
     place-self: center;
     flex-wrap: wrap;
-    gap: 50px;
     justify-content: none;
     max-inline-size: none;
     padding: 32px 0;
@@ -48,4 +47,5 @@
     inline-size: 95px;
     font-size: $font-size-md;
     font-weight: 500;
+    margin: 16px;
 }

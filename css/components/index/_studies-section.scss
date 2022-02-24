@@ -23,15 +23,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 40px;
     inline-size: 100%;
-    margin-block-end: 40px;
 }
 
 .studies-item__img {
     inline-size: 100%;
     max-inline-size: 350px;
     padding: 20px;
+    margin-block-end: 40px;
     object-fit: cover;
     object-position: center;
     border-block-end: 2.5px solid $color-textthird;
@@ -40,7 +39,6 @@
 
 .more-studies__cta {
     padding: 16px;
-    margin-block-start: 20px;
 }
 
 .more-studies__cta:hover {

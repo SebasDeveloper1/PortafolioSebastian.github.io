@@ -6,8 +6,13 @@ function showScroll() {
     for (let i = 0; i < animatedElements.length; i++) {
         let heightElement = (animatedElements[i].offsetTop - 500);
         if (heightElement < scrollTop) {
-            animatedElements[i].style.opacity = 1;
-            animatedElements[i].classList.add('entrance-animation-left');
+            if (i % 2 === 0) {
+                animatedElements[i].style.opacity = 1;
+                animatedElements[i].classList.add('entrance-animation-left');
+            } else {
+                animatedElements[i].style.opacity = 1;
+                animatedElements[i].classList.add('entrance-animation-right');
+            }
         }
     }
 }

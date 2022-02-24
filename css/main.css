@@ -78,8 +78,14 @@ main {
 }
 
 .return__btn-icon {
-  inline-size: 60px;
-  block-size: 60px;
+  inline-size: 50px;
+  block-size: 50px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.return__btn-icon:hover {
+  background-color: #3d4f91;
 }
 
 @-webkit-keyframes cta {
@@ -347,8 +353,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   overflow-y: scroll;
-  -ms-scroll-chaining: smooth;
-      overscroll-behavior: smooth;
   inline-size: 100%;
   block-size: calc(100vh - 70px);
   background-color: #080f28;
@@ -480,8 +484,7 @@ main {
 .contact__line {
   inline-size: 50%;
   block-size: 4px;
-  -webkit-margin-before: 32px;
-          margin-block-start: 32px;
+  margin-block: 32px;
   background-color: #007bff;
   border-radius: 1px;
 }
@@ -530,6 +533,8 @@ main {
           justify-content: center;
   inline-size: 90%;
   max-inline-size: 1280px;
+  -webkit-margin-before: 70px;
+          margin-block-start: 70px;
   -webkit-animation: entranceScale 1.2s;
           animation: entranceScale 1.2s;
 }
@@ -544,7 +549,7 @@ main {
   -o-object-position: center;
      object-position: center;
   border-radius: 50%;
-  border: 4px solid #007bff;
+  border: 6px solid #007bff;
 }
 
 .hero__text {
@@ -572,8 +577,8 @@ main {
 }
 
 .hero__text-subtitle {
-  -webkit-margin-after: 40px;
-          margin-block-end: 40px;
+  -webkit-margin-after: 32px;
+          margin-block-end: 32px;
   font-size: 2.4rem;
   color: #ffffff;
 }
@@ -590,6 +595,8 @@ main {
 
 .description-main {
   inline-size: 100%;
+  -webkit-margin-before: 32px;
+          margin-block-start: 32px;
   -webkit-margin-after: 70px;
           margin-block-end: 70px;
 }
@@ -650,8 +657,8 @@ main {
 
 .abilities-main {
   inline-size: 100%;
-  -webkit-margin-after: 70px;
-          margin-block-end: 70px;
+  -webkit-margin-after: 54px;
+          margin-block-end: 54px;
 }
 
 .abilities-container {
@@ -681,7 +688,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 16px;
 }
 
 .card-ability {
@@ -695,6 +701,8 @@ main {
   block-size: 100px;
   max-inline-size: 400px;
   padding: 12px;
+  -webkit-margin-after: 16px;
+          margin-block-end: 16px;
   border-radius: 8px;
   background-color: rgba(61, 79, 145, 0.2);
 }
@@ -780,7 +788,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 30px;
 }
 
 .card-project {
@@ -790,6 +797,8 @@ main {
   block-size: 280px;
   max-inline-size: 400px;
   border-radius: 12px;
+  -webkit-margin-after: 32px;
+          margin-block-end: 32px;
 }
 
 .card-project__background {
@@ -818,7 +827,7 @@ main {
           justify-content: center;
   row-gap: 4px;
   inline-size: 100%;
-  block-size: 50%;
+  block-size: auto;
   padding: 16px;
   border-radius: 0 0 8px 8px;
   background-color: rgba(8, 15, 40, 0.7);
@@ -856,14 +865,12 @@ main {
   display: flex;
   bottom: 0;
   right: 0;
-  padding: 16px;
+  padding: 0 16px 16px 0;
 }
 
 .info-links__link {
   padding: 8px;
   border-radius: 50%;
-  -webkit-margin-start: 8px;
-          margin-inline-start: 8px;
 }
 
 .info-links__icon {
@@ -878,8 +885,6 @@ main {
 
 .more-projects__cta {
   padding: 16px;
-  -webkit-margin-before: 32px;
-          margin-block-start: 32px;
 }
 
 .more-projects__cta:hover {
@@ -935,16 +940,15 @@ main {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  row-gap: 40px;
   inline-size: 100%;
-  -webkit-margin-after: 40px;
-          margin-block-end: 40px;
 }
 
 .studies-item__img {
   inline-size: 100%;
   max-inline-size: 350px;
   padding: 20px;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -956,8 +960,6 @@ main {
 
 .more-studies__cta {
   padding: 16px;
-  -webkit-margin-before: 20px;
-          margin-block-start: 20px;
 }
 
 .more-studies__cta:hover {
@@ -967,8 +969,8 @@ main {
 
 .contact-main {
   inline-size: 100%;
-  -webkit-margin-after: 70px;
-          margin-block-end: 70px;
+  -webkit-margin-after: 54px;
+          margin-block-end: 54px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#080f28), color-stop(#080f2888), to(#080f28)), url(https://i.postimg.cc/PqVMmkJK/image-banner.jpgS);
   background-image: linear-gradient(to top, #080f28, #080f2888, #080f28), url(https://i.postimg.cc/PqVMmkJK/image-banner.jpgS);
   background-size: cover;
@@ -1027,7 +1029,6 @@ main {
   place-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px;
   -webkit-box-pack: none;
       -ms-flex-pack: none;
           justify-content: none;
@@ -1039,6 +1040,7 @@ main {
   inline-size: 95px;
   font-size: 1.6rem;
   font-weight: 500;
+  margin: 16px;
 }
 
 .footer-main {
