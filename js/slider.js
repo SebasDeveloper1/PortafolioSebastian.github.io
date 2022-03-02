@@ -32,7 +32,7 @@ function Prev() {
 }
 
 function startSlider() {
-    return interval = setInterval(() => { Next(); }, 10000);
+    return interval = setInterval(() => { Next(); }, 8000);
 }
 
 function stopSlider() {

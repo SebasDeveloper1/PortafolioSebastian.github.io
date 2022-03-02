@@ -1,5 +1,8 @@
 @import "../globals/options-contact";
 
+/*__________________________________________*/
+// Section -> (Header)
+/*__________________________________________*/
 .header {
     position: fixed;
     top: 0;
@@ -37,8 +40,9 @@
     object-fit: cover;
     object-position: center;
 }
-
-// Menu styles
+/*__________________________________________*/
+// Section -> (Header (Menu Styles))
+/*__________________________________________*/
 .nav__menu-container {
     position: absolute;
     top: 70px;
@@ -56,8 +60,9 @@
 .nav__menu-container2 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-
-// info styles
+/*__________________________________________*/
+// Section -> (Header (Info Styles))
+/*__________________________________________*/
 .nav__info-container {
     display: flex;
     align-items: center;
@@ -100,8 +105,9 @@
 .nav__data-btn {
     padding: 12px;
 }
-
-// Nav-bar styles
+/*__________________________________________*/
+// Section -> (Header (Nav-Bar Styles)
+/*__________________________________________*/
 .nav__list {
     inline-size: 90%;
     border-block-start: 1px solid $color-primary-border;
@@ -135,8 +141,9 @@
 .nav__list-link--active {
     border-block-end: 2px solid $color-primary;
 }
-
-// Nav contact styles
+/*__________________________________________*/
+// Section -> (Header (Nav contact styles))
+/*__________________________________________*/
 .nav__contact-container {
     display: flex;
     flex-direction: column;

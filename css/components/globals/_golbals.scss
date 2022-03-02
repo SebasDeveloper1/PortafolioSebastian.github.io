@@ -1,4 +1,6 @@
+/*__________________________________________*/
 // Colors
+/*__________________________________________*/
 $color-primary: #007bff;
 $color-primary-opacity: #007bffd8;
 $color-secondary: #3d4f91;
@@ -19,10 +21,14 @@ $color-icons-footer: rgba(255, 255, 255, 0.5);
 $color-primary-border: #737785;
 $color-secoundary-border: #222e57;
 
-//Fonts
+/*__________________________________________*/
+// Fonts
+/*__________________________________________*/
 $font-primary: "Raleway", sans-serif;
 
-// Font size
+/*__________________________________________*/
+// Fonts size
+/*__________________________________________*/
 $font-size-vs: 1.2rem;
 $font-size-sm: 1.4rem;
 $font-size-md: 1.6rem;
@@ -32,7 +38,9 @@ $font-size-xl: 4rem;
 $font-size-xxl: 5rem;
 $font-size-xxxl: 6rem;
 
-//Golbals styles
+/*__________________________________________*/
+// Global Styles
+/*__________________________________________*/
 * {
     margin: 0;
     padding: 0;

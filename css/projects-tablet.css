@@ -1,3 +1,11 @@
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +38,10 @@ main {
   z-index: 90;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 @-webkit-keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -44,7 +56,6 @@ main {
             transform: scale(1);
   }
 }
-
 @keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -185,6 +196,8 @@ main {
           animation: entranceAnimationLeft 0.5s;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +244,8 @@ main {
   display: none;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .slider {
   block-size: 70vh;
 }
@@ -239,32 +254,13 @@ main {
   font-size: 6rem;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .projects-main {
   -webkit-margin-after: 100px;
           margin-block-end: 100px;
 }
 
-.projects-container-cards {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.card-project {
-  max-inline-size: 30%;
-}
-
-.project-info {
-  block-size: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-.project-info:hover {
-  opacity: 1;
-}
-
-.more-projects__cta {
-  inline-size: 600px;
+.grid .item {
+  inline-size: calc(25% - 20px);
 }

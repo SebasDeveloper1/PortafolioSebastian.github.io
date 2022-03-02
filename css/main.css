@@ -1,3 +1,11 @@
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +38,10 @@ main {
   z-index: 90;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 .primary__button {
   display: inline-block;
   font-size: 1.6rem;
@@ -46,6 +58,8 @@ main {
   background-color: #007bffd8;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .secondary__button {
   display: inline-block;
   font-size: 1.6rem;
@@ -62,6 +76,8 @@ main {
   background-color: #007bff;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .return__btn-container {
   position: fixed;
   bottom: 30px;
@@ -88,6 +104,10 @@ main {
   background-color: #3d4f91;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 @-webkit-keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -102,7 +122,6 @@ main {
             transform: scale(1);
   }
 }
-
 @keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -243,6 +262,8 @@ main {
           animation: entranceAnimationLeft 0.5s;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__contact-options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +307,8 @@ main {
           animation: cta 0.3s ease-in-out;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .header {
   position: fixed;
   top: 0;
@@ -338,6 +361,8 @@ main {
      object-position: center;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__menu-container {
   position: absolute;
   top: 70px;
@@ -365,6 +390,8 @@ main {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +448,8 @@ main {
   padding: 12px;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__list {
   inline-size: 90%;
   -webkit-border-before: 1px solid #737785;
@@ -457,6 +486,8 @@ main {
           border-block-end: 2px solid #007bff;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,6 +529,8 @@ main {
   cursor: pointer;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +626,8 @@ main {
           animation: cta 0.3s ease-in-out;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .description-main {
   inline-size: 100%;
   -webkit-margin-before: 32px;
@@ -655,6 +690,8 @@ main {
   vertical-align: middle;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .abilities-main {
   inline-size: 100%;
   -webkit-margin-after: 54px;
@@ -741,6 +778,8 @@ main {
   color: #007bff;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .projects-main {
   inline-size: 100%;
   -webkit-margin-after: 70px;
@@ -779,15 +818,30 @@ main {
           border-block-start: 1px solid #222e57;
 }
 
-.projects-container-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.grid {
+  position: relative;
+  inline-size: 100%;
+  -webkit-margin-after: 32px;
+          margin-block-end: 32px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear 1s;
+  transition: opacity 0.5s linear 1s;
+}
+
+.uploaded-images {
+  opacity: 1;
+}
+
+.item-content {
+  position: relative;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  inline-size: calc(100% - 20px);
+  padding: 0;
+  margin: 10px;
 }
 
 .card-project {
@@ -795,10 +849,7 @@ main {
   overflow: hidden;
   inline-size: 100%;
   block-size: 280px;
-  max-inline-size: 400px;
   border-radius: 12px;
-  -webkit-margin-after: 32px;
-          margin-block-end: 32px;
 }
 
 .card-project__background {
@@ -892,6 +943,8 @@ main {
           animation: cta 0.3s ease-in-out;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .studies-main {
   inline-size: 100%;
   -webkit-margin-after: 70px;
@@ -967,6 +1020,8 @@ main {
           animation: cta 0.3s ease-in-out;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .contact-main {
   inline-size: 100%;
   -webkit-margin-after: 54px;
@@ -1043,6 +1098,8 @@ main {
   margin: 16px;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .footer-main {
   display: -webkit-box;
   display: -ms-flexbox;

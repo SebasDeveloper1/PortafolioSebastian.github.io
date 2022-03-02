@@ -1,3 +1,6 @@
+/*__________________________________________*/
+// Section ->(Projects (index))
+/*__________________________________________*/
 .projects-main {
     inline-size: 100%;
     margin-block-end: 70px;
@@ -18,10 +21,28 @@
     @include titleSectionIndex;
 }
 
-.projects-container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.grid {
+    position: relative;
+    inline-size: 100%;
+    margin-block-end: 32px;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.uploaded-images {
+    opacity: 1;
+}
+
+.item-content {
+    position: relative;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    inline-size: calc(100% - 20px);
+    padding: 0;
+    margin: 10px;
 }
 
 .card-project {
@@ -29,9 +50,7 @@
     overflow: hidden;
     inline-size: 100%;
     block-size: 280px;
-    max-inline-size: 400px;
     border-radius: 12px;
-    margin-block-end: 32px;
 }
 
 .card-project__background {

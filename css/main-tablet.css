@@ -1,3 +1,11 @@
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +38,10 @@ main {
   z-index: 90;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
+/*__________________________________________*/
 @-webkit-keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -44,7 +56,6 @@ main {
             transform: scale(1);
   }
 }
-
 @keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -185,6 +196,8 @@ main {
           animation: entranceAnimationLeft 0.5s;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +244,8 @@ main {
   display: none;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .hero__info-container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -265,6 +280,8 @@ main {
   font-size: 4rem;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .description-main {
   -webkit-margin-after: 100px;
           margin-block-end: 100px;
@@ -302,6 +319,8 @@ main {
       align-self: start;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .abilities-main {
   -webkit-margin-after: 84px;
           margin-block-end: 84px;
@@ -325,19 +344,15 @@ main {
           animation: all 5s ease-in;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .projects-main {
   -webkit-margin-after: 100px;
           margin-block-end: 100px;
 }
 
-.projects-container-cards {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.card-project {
-  max-inline-size: 30%;
+.grid .item {
+  inline-size: calc(33.3333% - 20px);
 }
 
 .project-info {
@@ -355,6 +370,8 @@ main {
   inline-size: 600px;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .studies-main {
   -webkit-margin-after: 100px;
           margin-block-end: 100px;
@@ -378,6 +395,8 @@ main {
   inline-size: 600px;
 }
 
+/*__________________________________________*/
+/*__________________________________________*/
 .contact-main {
   -webkit-margin-after: 84px;
           margin-block-end: 84px;
